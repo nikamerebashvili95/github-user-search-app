@@ -5,6 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --electric: #0079ff;
+  --gray: #697c9a;
+  --darkSky: #4b6a9b;
+  --darkBlue: #2b3442;
+  --lightBg: #f6f8ff;
+  --light: #fefefe;
+  --white: #ffffff;
+  --dark: #141d2f;
+  --semiDark: #1e2a47;
+  --error: #f74646;
+}
 body {
   width: 100vw;
   min-height: 100vh;
@@ -27,10 +39,24 @@ body {
   line-height: 39px;
   color: #222731;
 }
+.title.dark {
+  color: var(--white);
+}
 .theme-text {
   font-weight: 700;
   font-size: 13px;
   line-height: 19px;
   letter-spacing: 2.5px;
   color: #4b6a9b;
+}
+.theme-text.dark {
+  color: var(--white);
+}
+.theme-panel {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+#sun {
+  display: none;
 }
