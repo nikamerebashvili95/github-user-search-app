@@ -1,5 +1,3 @@
-[Figma](https://www.figma.com/file/uDUI9mShrkzbwHcLSIdQyx/github-user-search-app?node-id=0%3A1&t=6h7tZMBX3dyeiFhS-0)
-
 # Frontend Mentor - GitHub user search app
 
 ![Design preview for the GitHub user search app coding challenge](./preview.jpg)

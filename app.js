@@ -19,6 +19,7 @@ const blog = document.querySelector("#blog");
 const twitter = document.querySelector("#twitter");
 const company = document.querySelector("#company");
 const errorMsg = document.querySelector(".error");
+const stats = document.querySelector(".stats");
 const octocat = {
   avatar_url: "https://avatars.githubusercontent.com/u/583231?v=4",
   bio: null,
@@ -117,6 +118,9 @@ const flitTheme = (theme) => {
   themeText.classList.toggle("dark");
   user.classList.toggle("dark");
   Array.from(cards).forEach((card) => card.classList.toggle("dark"));
+  blog.classList.toggle("dark");
+  login.style.color = "var(--electric)";
+  stats.classList.toggle("dark");
 };
 moon.addEventListener("click", () => flitTheme("dark"));
 sun.addEventListener("click", () => flitTheme("light"));

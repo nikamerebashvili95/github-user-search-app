@@ -77,6 +77,15 @@ body {
   background-color: var(--semiDark);
   box-shadow: none;
 }
+.card.dark,
+.card.dark h2,
+.card.dark h3,
+.card.dark p {
+  color: var(--white);
+}
+#blog.dark {
+  color: var(--white);
+}
 #user {
   width: 184px;
   border: none;
@@ -108,7 +117,7 @@ body {
   text-transform: capitalize;
   border-radius: 10px;
   padding: 12px 16px;
-  margin-left: 7px;
+  margin-left: auto;
 }
 .error {
   margin-top: 10px;
@@ -177,6 +186,9 @@ body {
   margin-top: 23px;
   column-gap: 30px;
 }
+.stats.dark {
+  background-color: var(--dark);
+}
 .stat {
   text-align: center;
 }
@@ -214,4 +226,124 @@ body {
 }
 .location-link {
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  body {
+    padding: 0 98px;
+    padding-bottom: 236px;
+  }
+  .main-container {
+    position: relative;
+  }
+  .header {
+    margin-top: 140px;
+  }
+  #user {
+    font-size: 18px;
+    line-height: 25px;
+    width: 254px;
+  }
+  .btn,
+  .login {
+    font-size: 16px;
+    line-height: 23.7px;
+  }
+  .form {
+    padding: 10px 10px 10px 32px;
+  }
+  .name {
+    font-size: 26px;
+    line-height: 38.51px;
+  }
+  .user-info {
+    padding: 40px;
+    margin-top: 24px;
+  }
+  .general {
+    column-gap: 40px;
+  }
+  .join-date,
+  .location-text {
+    font-size: 15px;
+    line-height: 22.22px;
+  }
+  .bio {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .stat-title {
+    font-size: 13px;
+    line-height: 19.25px;
+  }
+  .amount {
+    font-size: 22px;
+    line-height: 32.58px;
+  }
+  .stats {
+    column-gap: 98px;
+  }
+  .stat {
+    text-align: left;
+  }
+  .location {
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+  .location-info:nth-child(3) {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+  .error {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+  }
+}
+@media (min-width: 989px) {
+  .error {
+    right: 15%;
+  }
+}
+@media (min-width: 1200px) {
+  .error {
+    right: 13%;
+    top: 31%;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    padding: 0;
+    padding-bottom: 170px;
+  }
+  .header,
+  .card {
+    width: 730px;
+  }
+  .avatar-mobile {
+    display: none;
+  }
+  .avatar-desktop {
+    display: block;
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+  }
+  .user-info {
+    display: flex;
+    column-gap: 37px;
+    padding: 48px;
+  }
+  .personal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .error {
+    right: 17%;
+    top: 31%;
+  }
 }
