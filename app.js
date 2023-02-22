@@ -109,10 +109,12 @@ const flitTheme = (theme) => {
     moon.style.display = "none";
     sun.style.display = "block";
     document.body.style.backgroundColor = "#141D2F";
+    themeText.textContent = "LIGHT";
   } else {
     moon.style.display = "block";
     sun.style.display = "none";
     document.body.style.backgroundColor = "#f6f8ff";
+    themeText.textContent = "DARK";
   }
   title.classList.toggle("dark");
   themeText.classList.toggle("dark");
